@@ -1,0 +1,18 @@
+<!-- The content below is only a placeholder and can be replaced. -->
+<div style="text-align:center">
+  <h3>Admin Login</h3>
+  <input
+    [(ngModel)]="register.username"
+    placeholder="Username"
+    required
+  /><br />
+  <input [(ngModel)]="register.email" placeholder="Email" required /><br />
+  <input
+    [(ngModel)]="register.password"
+    type="password"
+    placeholder="Password"
+    required
+  /><br />
+  <button (click)="registerUser()">Register User</button>
+  <p>Hello:{{ register.username }}</p>
+</div>
